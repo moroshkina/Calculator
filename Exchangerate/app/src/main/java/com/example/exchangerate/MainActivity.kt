@@ -18,6 +18,17 @@ class MainActivity : AppCompatActivity() {
             a /= 74
             this.output_num.setText(a.toString())
         }
+        else if(output_num.text.isNotEmpty()){
+            var a :Double = output_num.getText().toString().toDouble()
+            a *= 74
+            this.input_num.setText(a.toString())
+        }
+
+    }
+
+    fun oifAgain(view: View) {
+        input_num.text.clear()
+        output_num.text.clear()
     }
 
 }
